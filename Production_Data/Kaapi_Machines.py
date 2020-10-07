@@ -50,8 +50,9 @@ print(df_new_sheet2)
 
 # Writing to SQL
 
-#df_new_sheet1.to_sql('Kaapi_Machine_Inbound',con=connection,if_exists='append',index=False)
+df_new_sheet1.to_sql('Kaapi_Machine_Inbound',con=connection,if_exists='append',index=False)
 
-#df_new_sheet2.to_sql('Kaapi_Machine_Outbound',con=connection,if_exists='append',index=False)
+df_new_sheet2.to_sql('Kaapi_Machine_Outbound',con=connection,if_exists='append',index=False)
 
 #10/6/2020 - 6.04PM
+#10/7/2020 - 1.01PM

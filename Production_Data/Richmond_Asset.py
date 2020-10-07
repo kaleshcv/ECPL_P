@@ -37,7 +37,8 @@ df_new_sheet1=df_sheet1.iloc[l_sheet1:]
 print(df_new_sheet1)
 
 # Writing to SQL
-#df_new_sheet1.to_sql('Richmond_Asset',con=connection,if_exists='append',index=False)
+df_new_sheet1.to_sql('Richmond_Asset',con=connection,if_exists='append',index=False)
 
 
 #10/6/2020 - 6.06PM
+#10/7/2020 - 1.02PM

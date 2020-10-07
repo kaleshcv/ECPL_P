@@ -23,7 +23,7 @@ df_sheet1=pd.read_excel('//172.16.10.12/PowerBI Reports/TORRY HARRIS INC/Torry h
 #   Reeding from SQL
 df_from_sql_sheet1=pd.read_sql('SELECT * FROM Torry_Harris',con=connection)
 
-print(df_from_sql_sheet1)
+
 
 
 #   Finding Last index
@@ -40,7 +40,9 @@ print(df_new_sheet1)
 #print(df_new_sheet1)
 
 # Writing to SQL
-#df_new_sheet1.to_sql('Torry_Harris',con=connection,if_exists='append',index=False)
+df_new_sheet1.to_sql('Torry_Harris',con=connection,if_exists='append',index=False)
 
 
 #10/6/2020 - 6.09 PM
+#10/7/2020 - 1.21PM
+

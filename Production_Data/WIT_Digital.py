@@ -15,7 +15,7 @@ connection=engine.connect()
 
 #   Reading Excel
 df_sheet1=pd.read_excel('//172.16.10.12/PowerBI Reports/WIT DIGITAL/WIT Digital New Format.xlsx',sheet_name='Sheet2')
-print(df_sheet1)
+
 
 # First Insertion - DONE
 #df_sheet1.to_sql('WIT_Digital',con=connection,if_exists='append',index=False)
@@ -37,7 +37,7 @@ print(df_new_sheet1)
 #print(df_new_sheet1)
 
 # Writing to SQL
-#df_new_sheet1.to_sql('WIT_Digital',con=connection,if_exists='append',index=False)
-
+df_new_sheet1.to_sql('WIT_Digital',con=connection,if_exists='append',index=False)
 
 #10/6/2020 - 6.10 PM
+#10/7/2020 - 1.30 PM

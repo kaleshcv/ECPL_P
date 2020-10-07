@@ -39,4 +39,5 @@ print(df_new_sheet1)
 #df_new_sheet1.to_sql('GB_Dashboard',con=connection,if_exists='append',index=False)
 
 #10/6/2020 - 4.05PM
+#10/7/2020 - 12.29PM
 
